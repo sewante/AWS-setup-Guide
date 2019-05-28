@@ -1,0 +1,223 @@
+body{
+  background-image: url('../images/bg.png');
+
+}
+
+#div1{
+  position:absolute;
+  background-color:blue;
+   width:100px;
+    height: 200px;
+    top: 200px;
+    left: 100px;
+}
+#div2{
+  position:absolute;
+   background-color:red;
+    width:100px; height:200px;
+    top: 300px;
+    left: 300px;
+}
+#divx{
+  width: 300px;
+  height: 400px;
+  border: 2px solid green;
+  margin-left: 50%
+}
+nav{
+  display: flex;
+   background-color: DodgerBlue;
+
+}
+.push{
+  display: flex;
+}
+.line{
+  align-self: flex-start;
+}
+.push-right{
+  align-self: flex-end;
+}
+
+.flex-container > a {
+  text-decoration: none;
+
+}
+.auto{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+.auto:hover{
+  transform: scale(1.1);
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: blue;
+  background-color: #f1c1c4;
+}
+.pic{
+  display: flex;
+  justify-content: center;
+}
+.haras{
+  background-color: DodgerBlue;
+}
+.dash{
+  height: 630px;
+  overflow-y: scroll;
+  background-color: white;
+}
+.canva{
+
+  overflow-y: scroll;
+  background-color: white;
+  width: 100%;
+  height: 630px;
+}
+
+.menux{
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  margin-top: -42%;
+  display: none;
+}
+.home{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+#dashItems{
+  display: flex;
+  flex-direction: column;
+}
+.foot{
+  backgrond-color: white;
+  margin-bottom: 0px;
+  padding: 10px;
+
+}
+.yip{
+  margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.m{
+  font-size: 20px;
+  padding-left: 20px;
+
+}
+.activeNow{
+  border: 3px solid dodgerblue;
+  border-radius: 5px;
+}
+.lastActive{
+  border: 3px solid yellow;
+  border-radius: 5px;
+}
+.previous{
+  border: 3px solid pink;
+  border-radius: 5px;
+}
+.running{
+  position: absolute;
+cursor: grab;
+}
+.main{
+  border: 1px dashed gray;
+  width: 250px;
+  height: 300px;
+  margin-left: 35%;
+  margin-top: 8%;
+}
+.i2c{
+  border: 1px dashed gray;
+  width: 100px;
+  height: 100px;
+  margin: 2%;
+}
+.temp{
+    border: 1px dashed gray;
+    width: 150px;
+    height: 90px;
+    margin: 2%;
+}
+/*    the starting point for 2m node page    */
+.main_2m{
+  border: 1px dashed gray;
+  width: 200px;
+  height: 250px;
+  margin: 2%;
+
+}
+.touched{
+  border:4px dashed green;
+}
+.untouched{
+  border:1px dashed grey;
+}
+.beat{
+  border: 1px solid gray;
+}
+.batery{
+  border: 1px dashed gray;
+  width: 100px;
+  height: 100px;
+  margin-left: 38%;
+}
+.boost{
+  border: 1px dashed gray;
+  width: 100px;
+  height: 100px;
+  margin-top: 1%;
+  margin-left: 38%;
+}
+.panel{
+    osition: absolute;
+    border: 1px dashed gray;
+    width: 100px;
+    height: 100px;
+    margin-left: 38%;
+    margin-top: 1%;
+}
+.dragie{
+  color: green;
+}
+.empti{
+  border: 1px dashed red;
+}
+.pointed{
+  border: 3px dashed purple;
+}
+.defaulty{
+  border: 1px dashed gray;
+}
+.awosome{
+  border: 4px dashed green;
+}
+.wrongie{
+  border: 4px dashed red;
+}
+.owk{
+  width: 30%;
+  position: absolute;
+  margin-left: 65%;
+  margin-top: -40%;
+  display: none;
+}
+.poor{
+  color: red;
+}
+.good{
+  color: green;
+}
+.contx{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
