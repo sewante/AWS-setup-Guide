@@ -1,45 +1,42 @@
 /**
  * Loading the individual component that has been selected
  */
-var testPath = null;
 $(function(){
   
     $('#ban').on("click", ".comp", function(evt){
         evt.preventDefault();
+
+        $('.canva').empty().load('layouts/explore/component.html');
         var component = evt.target.text;
         
+        // prepare the path to the component's xml file
         var path = "xml/components/"+component+"/"+component+".xml";
-        testPath = path;
+        
         //get the object representation of the component's xml document
         var componentXML = readXMLFile(path);
+        
+        // load the component's name
+        $('#compName').text(readComponentName(componentXML));
 
-        // get the component's name
-        var name = readComponentName(componentXML);
+        // load the component's purpose
+        $('#compPurpose').text(readComponentPurpose(componentXML));
 
-        // get the component's purpose
-        var purpose = readComponentPurpose(componentXML);
+        //load the component's description
+        $('#compDescription').text(readComponentDescription(componentXML));
 
         // get the component's path to the general image
         var partialImagePath =  readComponetImage(componentXML, "general");
         var mainImagePath = "xml/components/"+component+"/"+partialImagePath;
+        // load the component's image
+        $('#compImage').attr('src',mainImagePath) ;
         
-        // get the component's properties
-        var properties = new Array();
-        properties = readComponentProperties(componentXML);
+        // load the component's properties
+        $('#compProperties').empty().append(getPropertiesList(componentXML));
 
-        var propertiesList = "";
-        for(var i = 0; i < properties.length; i++) {
-            propertiesList += "<li class='list-group-item'>"+properties[i]+"</li>";
-        }
-        
-        $('#compProperties').html = propertiesList;
-
-        $('.canva').empty().load('layouts/explore/component.html');
+        // load the component's link
+        $('#compLink').attr('href', readComponentLink(componentXML));
         
 
     });
 });
-
-function getTestPath() {
-    return testPath;
-} 
+ 

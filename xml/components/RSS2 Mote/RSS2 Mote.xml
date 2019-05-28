@@ -4,16 +4,17 @@
 	<name>RSS2 Mote</name>
 	
 	<!-- COMPONENT IMAGES -->
-	<image title="general">rss2_mote_main.jpg</image>
+	<image title="general">rss2_mote_general.png</image>
 	<image title="thumbnail"></image>
 	<!-- By interface we mean the specific parts on the component where connections are made -->
+	<image title="back">rss2_mote_main_back.png</image>
 	<image title="adc1">rss2_mote_ADC1.png</image>
 	<image title="isp">rss2_mote_ISP.png</image>
 	<image title="i2c">rss2_mote_I2C.png</image>
 		
 	
 	<!-- COMPONENT PURPOSE -->
-	<purpose>Connection point for all sensors, captures and broadcasts weather data.</purpose>
+	<purpose>Used as a connection point for all sensors, captures and broadcasts weather data.</purpose>
 	
 	<!-- COMPONENT PROPERTIES -->
 	<properties>

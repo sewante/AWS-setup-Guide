@@ -142,6 +142,35 @@ var readComponentProperties = function(xmlObject) {
     }
     return propertiesArray;
 }
+/**
+    function to preparet the component's properties in a list fomart
+
+    @param xmlObject -> The object representaion of the xml file in which the properties are to be searched
+    @return propertiesList -> the html list representation of the proprties
+
+    Example
+    <li>Property1</li>
+    <li>Property2</li>
+    ................
+    <li>Propertyn</li>
+
+    The function gets the properties and puts them in <li> tags
+*/
+let getPropertiesList = function(xmlObject) {
+    
+    //get the properties into an array
+    var properties = readComponentProperties(xmlObject);
+
+    var propertiesList = "";
+    for(var i = 0; i < properties.length; i++) {
+        // add each property into <li> tag
+        propertiesList += "<li class='list-group-item'>"+properties[i]+"</li>";
+
+    }
+
+    return propertiesList;
+}
+
 
 /**  
     function to get and return the tag's text
